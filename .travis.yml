@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "10"
+jobs:
+  include:
+    - stage: test
+      script: ./test.sh
+    - stage: build
+      script: ./build-img.sh
+    - stage: publish
+      script: ./publish-img.sh

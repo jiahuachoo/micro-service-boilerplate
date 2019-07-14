@@ -1,0 +1,13 @@
+version: '3'
+services:
+  micro-service:
+    container_name: micro-service-base
+    build: .
+    environment:
+      - PORT=${PORT}
+    volumes:
+      - ./src:/app/
+      - /app/node_modules
+    ports:
+      - "${HOST_PORT}:${PORT}"
+ 
