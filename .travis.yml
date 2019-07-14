@@ -3,13 +3,10 @@ node_js:
   - "10"
 before_install:
   - chmod +x ./test.sh
-  - chmod +x ./build-img.sh
-  - chmod +x ./publish-img.sh
+  - chmod +x ./build-publish-img.sh
 jobs:
   include:
     - stage: test
       script: ./test.sh
-    - stage: build
-      script: ./build-img.sh
-    - stage: publish
-      script: ./publish-img.sh
+    - stage: build and publish
+      script: ./build-publish-img.sh
