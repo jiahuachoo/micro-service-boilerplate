@@ -7,6 +7,9 @@ A docker-compose file is also added so that it can be easily extensible to inclu
 # Installation
 Install Docker CE or EE or Toolbox if running on older Windows machine.
 
+# Travis-CI
+https://travis-ci.org/jiahuachoo/micro-service-boilerplate
+
 # Run
 ```
 ./run.sh
