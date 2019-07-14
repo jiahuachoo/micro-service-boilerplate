@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - "10"
+before_install:
+  - chmod +x ./test.sh
+  - chmod +x ./build-img.sh
+  - chmod +x ./publish-img.sh
 jobs:
   include:
     - stage: test
