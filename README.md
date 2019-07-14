@@ -23,13 +23,12 @@ https://travis-ci.org/jiahuachoo/micro-service-boilerplate
 # Publish
 The current image is pulled from jiahuachoo/micro-service-boilerplate. To change to a different repo, please make the appropriate changes to the build and publish shell scripts.
 
-To publish a new image to Dockerhub:
+To build and publish a new image to Dockerhub:
 ```
-./build-img.sh
-
-// you need to do docker login prior with your docker username and password
-// docker login -u <username> -p <password> 
-
-./publish-img.sh 
+EXPORT docker_hub_pwd=<your dockerhub password>
+EXPORT docker_hub_user=<your dockerhub user>
+./build-publish-img.sh
 ```
+
+Note: specifying credentials through environment variable is not the most ideal and secured. A better way would be to use access token (refer to https://docs.docker.com/registry/spec/auth/)
 
