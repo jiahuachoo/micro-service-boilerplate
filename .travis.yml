@@ -5,7 +5,6 @@ before_install:
   - chmod +x ./test.sh
   - chmod +x ./build-img.sh
   - chmod +x ./publish-img.sh
-  - echo "$docker-hub-pwd" | docker login -u "$docker-hub-user" --password-stdi
 jobs:
   include:
     - stage: test
