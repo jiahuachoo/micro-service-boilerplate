@@ -9,7 +9,5 @@ jobs:
   include:
     - stage: test
       script: ./test.sh
-    - stage: build
-      script: ./build-img.sh
-    - stage: publish
-      script: ./publish-img.sh
+    - stage: build and publish
+      script: ./build-publish-img.sh
